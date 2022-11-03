@@ -1,11 +1,11 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import InfoSection from "../components/InfoSection";
+import Stake from "../components/Stake";
 
 export default function Home() {
   return (
-    <div className='montserrat-bold-31'>
-      Hello World
-    </div>
-  )
+    <>
+      <InfoSection />
+      <Stake />
+    </>
+  );
 }
