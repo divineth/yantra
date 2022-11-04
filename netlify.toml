@@ -1,7 +1,8 @@
 [build]
-    base="client"
+    base="client/"
+    build=".next/"
 
 [[redirects]]
     from = "/*"
-    to = "/stake"
-    status = 301
+    to = "/index.html"
+    status = 200
