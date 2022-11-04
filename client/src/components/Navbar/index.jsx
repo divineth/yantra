@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Image from 'next/image';
+import Link from 'next/link';
 import Logo from '../../assets/images/yantra-logo.svg'
 import style from "./navbar.module.css";
 import WalletManager from "../WalletManager";
@@ -20,9 +20,11 @@ const Navbar = () => {
     <>
       <div className={style.navbar}>
         <div className={style.navbar__left}>
-          <img src={Logo.src} alt="" />
+          <Link href="/stake"><img src={Logo.src} alt="" /></Link>
         </div>
         <div className={style.navbar__right}>
+          <Link href="/stake">Stake</Link>
+          <Link href="/mint">Mint NFT</Link>
           <button onClick={openModal} className={style.connect_btn}>Connect Wallet</button>
         </div>
       </div>

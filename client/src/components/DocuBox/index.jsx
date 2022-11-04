@@ -15,7 +15,7 @@ const DocuBox = () => {
             className={style.info__link}
           >
             View Yantra on Etherscan
-            <img src={ExternalLink} alt="" />
+            <img src={ExternalLink.src} alt="" />
           </a>
         </div>
         <div className={style.info__body}>
@@ -28,7 +28,7 @@ const DocuBox = () => {
               className={style.info__link}
             >
               View Instructions
-              <img className="w-4" src={ExternalLink} alt="" />
+              <img className="w-4" src={ExternalLink.src} alt="" />
             </a>
           </div>
           <div className={style.body__content}>

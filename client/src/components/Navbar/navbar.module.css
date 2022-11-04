@@ -2,6 +2,10 @@
     @apply w-full flex justify-between items-center px-8 xl:px-32 py-8;
 }
 
+.navbar__right{
+    @apply flex justify-between items-center gap-8 nexa-reg-18 text-white;
+}
+
 .connect_btn{
     @apply relative rounded-3xl bg-red-500 px-10 py-3 text-white nexa-reg-18 uppercase;
     background: linear-gradient(342.71deg, #F9D207 -93.29%, #F92032 64.35%, #F92032 108.81%);

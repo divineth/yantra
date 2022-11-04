@@ -9,17 +9,17 @@ const providers = [
     {
         options: {},
         displayName: "MetaMask",
-        icon: MetaMask,
+        icon: MetaMask.src,
     },
     {
         options: { provider: "walletconnect" },
         displayName: "Coinbase Wallet",
-        icon: Coinbase
+        icon: Coinbase.src,
     },
     {
         options: { provider: "walletconnect" },
         displayName: "WalletConnect",
-        icon: WalletConnect
+        icon: WalletConnect.src,
     },
 
 ]
