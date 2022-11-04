@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import style from "./stake-widget.module.css";
 import CustomSlider from "../CustomSlider";
+import ConfirmStakeModal from "../ConfirmStakeModal";
 
 const StakeWidget = () => {
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const closeModal = () => {
+    setModalOpen(false);
+  };
 
   const marks = [
     {
@@ -53,10 +59,17 @@ const StakeWidget = () => {
           </div>
         </div>
         <div className={style.stake__buttons}>
-          <button>Stake</button>
-          <button>Unstake</button>
+          <button
+            onClick={() => {
+              setModalOpen(true);
+            }}
+          >
+            Stake
+          </button>
+          <button disabled={true}>Unstake</button>
         </div>
       </div>
+      <ConfirmStakeModal isOpen={modalOpen} onCloseModal={closeModal} />
     </div>
   );
 };

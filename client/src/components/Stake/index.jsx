@@ -5,7 +5,10 @@ import TotalPyroBox from "../TotalPyroBox";
 import style from "./stake.module.css";
 
 const Stake = () => {
+
+
   return (
+    <>
     <div className={style.container}>
       <div className={style.content}>
         <div className={style.content__left}>
@@ -17,6 +20,7 @@ const Stake = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
