@@ -35,7 +35,7 @@
   }
   
   .wallet_dialog_close:hover {
-    @apply text-[#FFDE00];
+    @apply text-[#FA4F27];
   }
   
   .wallet_dialog_title {
@@ -43,7 +43,7 @@
   }
   
   .wallet_dialog_body {
-    @apply p-6;
+    @apply p-6 pt-1;
   }
   
   .wallet_dialog_notice {
@@ -85,18 +85,20 @@
   }
   
   .wallet_dialog_provider p {
-    @apply text-[#FFDE00];
+    @apply text-white nexa-reg-16;
   }
   
   .wallet_dialog_disconnect {
-    @apply px-2 py-1;
+    @apply rounded-3xl py-2 text-white nexa-reg-15;
+    @apply bg-black border-[#4D4D4D] border-2;
+    @apply px-4 py-1;
   }
   .wallet_dialog_address {
-    @apply mt-4 py-4;
+    @apply mt-4 pb-4;
   }
   
   .wallet_dialog_address > p {
-    @apply text-white;
+    @apply text-white nexa-reg-20;
   }
   
   .wallet_dialog_address_copy_etherscan {
@@ -105,7 +107,7 @@
   
   .wallet_dialog_bottom_text,
   .wallet_dialog_bottom_text a {
-    @apply relative cursor-pointer flex gap-2 items-center text-[#818181];
+    @apply relative cursor-pointer flex gap-2 items-center text-white nexa-reg-16;
   }
   
   .wallet_dialog_bottom_text img {
