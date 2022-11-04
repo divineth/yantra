@@ -3,7 +3,7 @@
 }
 
 .navbar__right{
-    @apply flex justify-between items-center gap-8 nexa-reg-18 text-white;
+    @apply hidden md:flex justify-between items-center gap-8 nexa-reg-18 text-white;
 }
 
 .connect_btn{
@@ -25,4 +25,8 @@
             mask-composite: exclude; 
     @apply rounded-3xl p-[0.2rem];
     z-index: -1;
+}
+
+.mobile__menu{
+    @apply block md:hidden;
 }
